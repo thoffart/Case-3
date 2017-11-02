@@ -38,13 +38,17 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 #home{padding-top: 6em;}
 
 /*banner*/
-.banner{position: relative;}
-.banner .caption{position: absolute;top: 0;left:0; right: 0; bottom: 0;background:rgba(0,0,0,0.4); }
-.banner .caption-wrapper{display: table;height: 100%;width: 100%;}
-.banner .caption-info{display: table-cell;vertical-align: middle;text-align: center;color: #fff;}
-.banner .caption-info h1{font:normal 4.5em Lobster,Arial,Helvetica;text-transform:capitalize;}
-.banner .caption-info p{font:600 1.7em Josefin Sans,Arial,Helvetica;}
-.banner a.explore{color: #fff;}
+
+.banner{ width: :90%; margin: auto; overflow: hidden;}
+.banner ul{display: flex; padding: 0; width: 100%; margin-left:100%; margin-right:100%; animation: cambio 15s infinite alternate linear }
+.banner li{ width: 100%; list-style: none; }
+.banner img{width: 100%;}
+
+@keyframes cambio{
+	0%{margin-left: -100%;}
+		
+}
+
 
 /*about*/
 .about.spacer{padding-left: 4em; padding-right: 4em;padding-bottom: 0;}
@@ -81,15 +85,6 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 .highlight-info .overlay{background:rgba(59, 51, 48, 0.7);}
 .highlight-info h4{color: #fff;margin:0.5em 0 0 0;}
 /*about us*/
-
-
-
-
-
-
-
-
-
 
 /*contact*/
 .contactform textarea,.contactform input{width: 100%;padding:1em;border:1px solid #ccc;margin-bottom: 1em;border-radius: 0;outline: none;}
