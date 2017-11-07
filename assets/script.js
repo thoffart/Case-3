@@ -41,24 +41,14 @@ $('.carousel').swipe( {
 
 
 
-
-
-
-
-
 // map
 
 google.maps.event.addDomListener(window, 'load', init);
     var map;
     function init() {
         var mapOptions = {
-<<<<<<< HEAD
-            center: new google.maps.LatLng(-22.3489822,-49.0317116),
-            zoom: 16,
-=======
             center: new google.maps.LatLng(-22.351279, -49.033594),
             zoom: 18,
->>>>>>> googlemaps
             zoomControl: true,
             zoomControlOptions: {
                 style: google.maps.ZoomControlStyle.DEFAULT,
@@ -156,7 +146,7 @@ google.maps.event.addDomListener(window, 'load', init);
         var map = new google.maps.Map(mapElement, mapOptions);
         marker.setMap(map);
         var locations = [
-['Coffee Shop', 'bauru', '(11) 1234-5678', 'coffelove@coffee.com', 'coffeelove.com', -22.3489822, -49.0317116, 'https://mapbuildr.com/assets/img/markers/solid-pin-blue.png']
+['Coffee Shop', 'London', '121 1212 2121', 'info@coffee.com', 'coffee.com', 27.7236, 85.5247, 'https://mapbuildr.com/assets/img/markers/solid-pin-blue.png']
         ];
         for (i = 0; i < locations.length; i++) {
             if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
