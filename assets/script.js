@@ -47,8 +47,8 @@ google.maps.event.addDomListener(window, 'load', init);
     var map;
     function init() {
         var mapOptions = {
-            center: new google.maps.LatLng(27.734607,85.664078),
-            zoom: 12,
+            center: new google.maps.LatLng(-22.351279, -49.033594),
+            zoom: 18,
             zoomControl: true,
             zoomControlOptions: {
                 style: google.maps.ZoomControlStyle.DEFAULT,
@@ -136,8 +136,15 @@ google.maps.event.addDomListener(window, 'load', init);
         }]
     }],
         }
+         var myLatLng = {lat: -22.351279 , lng: -49.033594};
+         var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'Coffe Pizza!'
+        });
         var mapElement = document.getElementById('map');
         var map = new google.maps.Map(mapElement, mapOptions);
+        marker.setMap(map);
         var locations = [
 ['Coffee Shop', 'London', '121 1212 2121', 'info@coffee.com', 'coffee.com', 27.7236, 85.5247, 'https://mapbuildr.com/assets/img/markers/solid-pin-blue.png']
         ];
